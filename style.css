@@ -1381,13 +1381,10 @@ p {
     display: flex;
   }
   .hero-image {
-    max-width: 100%;
+    display: none;
   }
   .hero-stats {
     gap: 24px;
-  }
-  .hero-stat strong {
-    font-size: 1.4rem;
   }
   .about-image-wrap {
     max-width: 240px;
@@ -1446,9 +1443,14 @@ p {
     padding: 40px 0;
   }
   .hero-stats {
-    flex-direction: column;
     gap: 16px;
-    align-items: center;
+    justify-content: center;
+  }
+  .hero-stat strong {
+    font-size: 1.2rem;
+  }
+  .hero-stat span {
+    font-size: 0.75rem;
   }
   .about-image-wrap {
     max-width: 200px;
