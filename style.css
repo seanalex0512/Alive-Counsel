@@ -444,7 +444,10 @@ p {
 }
 
 .about-name-plate {
-  margin-top: 16px;
+  margin-top: -32px;
+  margin-bottom: 40px;
+  max-width: 300px;
+  text-align: center;
 }
 
 .about-name-plate h3 {
@@ -457,6 +460,10 @@ p {
   font-size: 0.9rem;
   color: var(--text-muted);
   margin: 0 auto;
+}
+
+.about-story {
+  margin-top: 30px;
 }
 
 .about-story p {
@@ -1291,11 +1298,32 @@ p {
     justify-content: center;
   }
   .hero-image {
-    display: none;
+    max-width: 500px;
+    margin: 0 auto;
   }
   .about-main {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 24px;
+  }
+  .about-image-wrap {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .about-name-plate {
+    text-align: center;
+    max-width: 100%;
+    margin: -16px auto 32px;
+  }
+  .about-story {
+    margin-top: 0;
+    text-align: center;
+  }
+  .about-story p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-closing {
+    text-align: center;
   }
   .about-highlights {
     grid-template-columns: repeat(2, 1fr);
@@ -1315,6 +1343,9 @@ p {
   }
   .location .container {
     grid-template-columns: 1fr;
+  }
+  .location-map {
+    min-height: 300px;
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
@@ -1344,6 +1375,21 @@ p {
   .mobile-toggle {
     display: flex;
   }
+  .hero-image {
+    max-width: 100%;
+  }
+  .hero-stats {
+    gap: 24px;
+  }
+  .hero-stat strong {
+    font-size: 1.4rem;
+  }
+  .about-image-wrap {
+    max-width: 240px;
+  }
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
   .services-grid {
     grid-template-columns: 1fr;
   }
@@ -1352,13 +1398,6 @@ p {
   }
   .testimonials-grid {
     grid-template-columns: 1fr;
-  }
-  .about-highlights {
-    grid-template-columns: 1fr;
-  }
-  .about-image-wrap {
-    max-width: 280px;
-    margin: 0 auto;
   }
   .form-row {
     grid-template-columns: 1fr;
@@ -1374,5 +1413,51 @@ p {
     flex-direction: column;
     gap: 16px;
     text-align: center;
+  }
+  .whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+  }
+  .blog-card-image.blog-card-image--compact img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 15px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .section {
+    padding: 56px 0;
+  }
+  .hero {
+    min-height: auto;
+    padding: 40px 0;
+  }
+  .hero-stats {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .about-image-wrap {
+    max-width: 200px;
+  }
+  .about-name-plate {
+    margin-bottom: 24px;
+  }
+  .contact-form {
+    padding: 24px 16px;
+  }
+  .booking-combined-header h2 {
+    font-size: 1.5rem;
+  }
+  .blog-card-image.blog-card-image--compact img {
+    max-width: 100%;
   }
 }
